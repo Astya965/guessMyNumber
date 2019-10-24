@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Игра «Угадай число»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="game">
+      <h1 class="game__title">Игра «Угадай число»</h1>
+      <p class="game__text">Мы загадали число от 1 до 100. У вас есть <strong class="game__tries">10</strong> попыток что бы отгадать его.
+      Мы подскажем, близка ли ваша догадка к истине.</p>
+      <form class="game__form">
+        <div class="game__main">
+          <input class="game__input" id="game-input" type="number" min="1" max="100" required>
+          <label class="game__label" for="game-input">Введите число</label>
+        </div>
+        <button class="btn game__btn" type="button">Проверить</button></form>
+      </form>
+      <p class="game__answer">Попробуйте начать игру!</p>
+      <p class="game__mistake"></p>
+    </div>
+    <div class="modal visually-hidden">
+      <p class="modal__text"></p>
+      <button class="btn modal__btn" type="button">Начать новую игру</button>
+    </div>
+  </body>
+</html>
